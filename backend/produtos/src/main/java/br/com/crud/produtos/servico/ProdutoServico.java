@@ -11,7 +11,7 @@ import br.com.crud.produtos.repositorio.ProdutoRepositorio;
 
 @Service
 public class ProdutoServico {
-  
+
   @Autowired
   private ProdutoRepositorio pr;
 
@@ -38,4 +38,11 @@ public class ProdutoServico {
             }
         }
     }
+
+    public ResponseEntity<RespostaModelo> remover(long codigo) {
+      pr.deleteById(codigo);
+      rm.setResposta("O produto foi removido com sucesso!");
+      return new ResponseEntity<RespostaModelo>(rm, HttpStatus.OK);
+    }
+    
 }
