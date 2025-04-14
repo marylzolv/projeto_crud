@@ -14,4 +14,5 @@ public class ProdutoServico {
     public Iterable<ProdutoModelo> listar(){
         return pr.findAll();
     }
+    
 }
