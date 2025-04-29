@@ -11,3 +11,7 @@ form input {
 form input[type="button"] {
   margin-right: 5px;
 }
+
+table {
+  margin: 30px auto;
+}
