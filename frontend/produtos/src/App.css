@@ -1,17 +1,213 @@
-form {
-  width: 600px;
-  margin: 30px auto;
+/* Reset básico e body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container geral */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+/* Cabeçalho do sistema */
+header {
+  background-color: #0D47A1;
+  color: white;
+  padding: 24px 0;
   text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(13, 71, 161, 0.3);
+  margin-bottom: 32px;
 }
 
-form input {
-  margin-bottom: 5px;
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
-form input[type="button"] {
-  margin-right: 5px;
+/* Formulário */
+.app-header {
+  background-color: #0D47A1;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+  box-shadow: 0 4px 10px rgba(13, 71, 161, 0.4);
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 32px;
 }
 
-table {
-  margin: 30px auto;
+.app-header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+.app-header p {
+  margin: 6px 0 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1.5px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  border-color: #0D47A1;
+  outline: none;
+}
+
+/* Botões do formulário */
+form .d-flex {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+form button {
+  padding: 10px 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Botão cadastrar / alterar */
+form button.btn-primary {
+  background-color: #0D47A1;
+  color: white;
+}
+
+form button.btn-primary:hover {
+  background-color: #06418c;
+}
+
+/* Botão cancelar */
+form button.btn-secondary {
+  background-color: #90A4AE;
+  color: white;
+}
+
+form button.btn-secondary:hover {
+  background-color: #607D8B;
+}
+
+/* Botão remover */
+form button.btn-danger {
+  background-color: #E53935;
+  color: white;
+}
+
+form button.btn-danger:hover {
+  background-color: #b71c1c;
+}
+
+/* Tabela */
+.table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #0D47A1;
+  color: white;
+  font-weight: 600;
+}
+
+.table th,
+.table td {
+  border-bottom: 1px solid #ddd;
+  padding: 14px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #BBDEFB;
+  cursor: pointer;
+}
+
+/* Botões dentro da tabela (se houver) */
+.btn-success {
+  background-color: #388E3C;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #2e7d32;
+}
+
+/* Header */
+.app-header {
+  background-color: #0D47A1;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+  box-shadow: 0 4px 10px rgba(13, 71, 161, 0.4);
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+.app-header p {
+  margin: 6px 0 0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.app-main {
+  max-width: 900px;
+  margin: 0 auto 64px auto;
+  padding: 0 16px;
+}
+
+.app-footer {
+  background-color: #eceff1;
+  color: #555;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 0.95rem;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+  width: 100%;
 }
